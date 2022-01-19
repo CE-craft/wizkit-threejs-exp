@@ -1,0 +1,22 @@
+@mixin centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gridBase {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns:
+    [margin-left-start] minmax(3vw, 1fr) [margin-left-end] repeat(
+      2,
+      [col-start] minmax(min-content, 41.5rem) [col-end]
+    )
+    repeat(2, [col-start] 22vw [col-end])
+    [margin-right-start] minmax(3vw, 1fr) [margin-right-end];
+  grid-column-gap: 2rem;
+  grid-template-rows: repeat(7, min-content) 1fr;
+  justify-content: stretch;
+  align-content: stretch;
+}

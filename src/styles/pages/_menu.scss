@@ -1,0 +1,44 @@
+.menu {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+
+  &__social-links {
+    grid-column: margin-left-end / col-end 2;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+  &__link {
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.23, 0.87, 0.47, 0.84);
+    -webkit-transition: 0.5s cubic-bezier(0.23, 0.87, 0.47, 0.84);
+    -moz-transition: 0.5s cubic-bezier(0.23, 0.87, 0.47, 0.84);
+    -ms-transition: 0.5s cubic-bezier(0.23, 0.87, 0.47, 0.84);
+    -o-transition: 0.5s cubic-bezier(0.23, 0.87, 0.47, 0.84);
+    /////////////////////////////////////////////////////////////
+    &:hover {
+      transform: translateX(5rem);
+      -webkit-transform: translateX(5rem);
+      -moz-transform: translateX(5rem);
+      -ms-transform: translateX(5rem);
+      -o-transform: translateX(5rem);
+    }
+  }
+
+  .line-h--posm {
+    grid-column: 1/-1;
+  }
+
+  .line-h--chairs {
+    grid-row: 4/5;
+  }
+
+  .line-h--couches {
+    grid-row: 5/6;
+  }
+
+  .line-h--other {
+    grid-row: 6/7;
+  }
+}

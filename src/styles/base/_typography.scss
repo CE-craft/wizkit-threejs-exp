@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: $normal-type;
+  line-height: 1.4;
+
+  color: $color-black;
+}
+
+.paragraphs__medium {
+  font-size: $medium-type;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  font-size: $large-type;
+  line-height: 0.8;
+  letter-spacing: -0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media only screen and(max-width: 112.5em) {
+    font-size: 15rem;
+  }
+  @media only screen and (max-width: 50em) {
+    font-size: 10rem;
+  }
+  @media only screen and (max-width: 31.25em) {
+    font-size: 7rem;
+    letter-spacing: -0.7rem;
+  }
+}
+
+.menu-link {
+  font-size: $large-type;
+}
+
+.logo {
+  font-weight: 900;
+}
+
+h1 {
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+
+p {
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}

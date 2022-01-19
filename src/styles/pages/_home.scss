@@ -1,0 +1,23 @@
+.home-page {
+  position: absolute;
+  z-index: 1;
+  //display: none;
+}
+
+.line-h--pos {
+  grid-column: margin-left-start/col-end 2;
+  grid-row: 4/5;
+  width: 102.3%;
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1/-1;
+  }
+}
+
+.line-v--pos {
+  grid-column: col-start 3 / col-end 3;
+  grid-row: 3/-1;
+
+  @media only screen and (max-width: 56.25em) {
+    display: none;
+  }
+}

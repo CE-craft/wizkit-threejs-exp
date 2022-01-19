@@ -1,0 +1,17 @@
+.u-medium-top-margin {
+  margin-top: 4rem;
+  @media only screen and (max-width: 31.25em) {
+    margin-top: 1.5rem;
+  }
+}
+
+.u-medium-bottom-margin {
+  margin-bottom: 4rem;
+  @media only screen and (max-width: 31.25em) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.u-large-top-margin {
+  margin-top: 10rem;
+}
